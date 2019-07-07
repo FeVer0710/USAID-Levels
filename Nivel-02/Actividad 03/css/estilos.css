@@ -1,0 +1,500 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%% Actividad 03 %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Integrantes: %%%%%%%%%%%%%%%%%
+%%%%%%% Daniela Claribel Eguizábal Argueta %%%%%%%
+%%%%%%%%%% Argelia Margarita Gómez Loza %%%%%%%%%%
+%%%%%%%% Mauricio Edilberto Fuentes Reyes %%%%%%%%
+%%%%%%%%%% Jaime Fernando Berríos Ortíz %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%% ESTILOS GENERALES %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    background-image: url("https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500");
+    padding: 20px;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%% ESTILO EN EL header %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+header {
+    font-size: 2vmax;
+    background: rgb(0, 123, 255);
+	border-radius: 8px;
+    padding:20px;
+    color: white;
+    text-align: center;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%% ESTILO EN EL main %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+main{
+    max-width: 100%;
+    background: white;
+    padding: 40px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% ESTILO EN EL primer contenido %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+.content1{
+    width: 100%;
+}
+
+.content1 .img3{
+    flex-direction: column-reverse;
+    height: 30px;
+    width: 30px;
+}
+
+.img-content1{
+    width: 100%;
+    text-align: center;
+}
+
+.img-content1 .img1{
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.img-content1 .img2{
+    width: 300px;
+    height: 250px;
+    border-radius: 20%;
+    margin-top: 5%;
+    margin-block-end:  5%;
+}
+
+.img-content1{
+    width: 100%;
+    text-align: center;
+}
+
+.img-content1 .img1{
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.img-content1 .img2{
+    width: 300px;
+    height: 250px;
+    border-radius: 20%;
+    margin-top: 5%;
+    margin-block-end:  5%;
+}
+
+.text-content1{
+    width: 100%;
+    text-align: center;
+    font-size: 2vmax;
+}
+
+.text-content1 h1{
+    margin-top: 40px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.text-content1 hr{
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    border-style: none;
+    background: -webkit-linear-gradient(left, red, blue, #82B2EE);
+    background: -moz-linear-gradient(left, red, blue, #82B2EE);
+    background: -o-linear-gradient(left, red, blue, #82B2EE);
+    margin-top: 20px;
+}
+
+.text-content1 p{
+    margin-top: 40px;
+    color: #63637B;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.text-content1 .ul{
+    text-align: left;
+    display: inline-block;
+}
+
+.button-leer{
+    width: 200px;
+    padding: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.button-leer a{
+    color:#000;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+}
+
+.button-leer:hover{
+    background: rgb(0, 123, 255);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%% ESTILO EN EL segundo contenido %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+.content2{
+    width: 100%;
+    text-align: center;
+}
+
+.content2 h1{
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 4vmax;
+}
+
+.content2 hr{
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    border-style: none;
+    background: -webkit-linear-gradient(left, red, blue, #82B2EE);
+    background: -moz-linear-gradient(left, red, blue, #82B2EE);
+    background: -o-linear-gradient(left, red, blue, #82B2EE);
+    margin-top: 20px;
+}
+
+.content2 p{
+    margin-top: 40px;
+    letter-spacing: 1px;
+    color: #877d7d;
+    font-size: 2vmax;
+}
+
+.content-estadisticas{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.item-estadistica{
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    padding: 40px;
+    color: white;
+    font-size: 2vmax;
+}
+
+.item-estadistica img:hover{
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(180deg);
+}
+
+.item1{
+    background: #EFA8B0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.item2{
+    background: #C79CC8;
+}
+
+
+.item3{
+    background: #A89CC8;
+}
+
+
+.item4{
+    background: #9BB2E1;
+}
+
+
+.item5{
+    background: #8CC9F0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.item-estadistica h4{
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.item-estadistica p{
+    color: white;
+    margin-top: 0px;
+}
+
+.parrafo-content1{
+    text-align: justify;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%% ESTILO EN EL tercer contenido %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+.content3{
+    width: 100%;
+    text-align: center;
+}
+
+.content3 h1{
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 4vmax;
+}
+
+.content3 hr{
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    border-style: none;
+    background: -webkit-linear-gradient(left, red, blue, #82B2EE);
+    background: -moz-linear-gradient(left, red, blue, #82B2EE);
+    background: -o-linear-gradient(left, red, blue, #82B2EE);
+    margin-top: 20px;
+}
+
+.content-details{
+    width: 100%;
+}
+
+.item-details{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.item-details video{
+    margin: 100px 0 0 0;
+}
+
+.icon-details{
+    width: 200px;
+    height: 200px;
+    /*%%%%% USO DE flexbox %%%%%*/
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.icon-details span{
+    font-size: 80px;
+    padding: 46px;
+    margin: auto;
+}
+
+.content-details h4{
+    font-weight: 100;
+    margin-top: 40px;
+    font-size: 3vmax;
+}
+
+.content-details p{
+    font-size: 2vmax;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: #877d7d;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%% ESTILO media queries PARA TABLET %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media screen and (min-width: 800px){
+
+    body{
+        background-image: url("https://images.pexels.com/photos/1493226/pexels-photo-1493226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        padding: 20px;
+    }
+
+    header {
+        background: white;
+        border-radius: 8px;
+        padding:20px;
+        color: rgb(0, 123, 255);
+        text-align: center;
+    }
+    
+    .content1{
+        /*%%%%% USO DE flexbox %%%%%*/
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .img-content1{
+        width: 60%;
+    }
+
+    .img-content1 .img1{
+        float: right;
+        width: 400px;
+        height: 350px;
+    }
+    
+    .button1{
+        float: left;
+    }
+    
+    .content-details{
+        display: flex;
+    }
+    
+    .content-estadisticas{
+        /*%%%%% USO DE flexbox %%%%%*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-estadisticas{
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    .item1{
+        background: #EFA8B0;
+        border-radius: 10px;
+    }
+
+    .item2{
+        background: #C79CC8;
+        border-radius: 10px;
+    }
+    
+    
+    .item3{
+        background: #A89CC8;
+        border-radius: 10px;
+    }
+    
+    .item4{
+        background: #9BB2E1;
+        border-radius: 10px;
+    }
+    
+    .item5{
+        background: #8CC9F0;
+        border-radius: 10px;
+    }
+    
+    .item-details{
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    .icon-details{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%% ESTILO media queries PARA ESCRITORIO %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media screen and (min-width: 1200px){
+
+    body{
+        background-image: url("https://images.pexels.com/photos/131634/pexels-photo-131634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        padding: 20px;
+    }
+
+    header {
+        background: rgb(0, 123, 255);
+        border-radius: 8px;
+        padding:20px;
+        color: white;
+        text-align: center;
+    }
+    
+    .content1{
+        /*%%%%% USO DE flexbox %%%%%*/
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .img-content1{
+        width: 50%;
+    }
+
+    .img-content1 .img1{
+        float: right;
+        width: 400px;
+        height: 350px;
+    }
+    
+    .button1{
+        float: right;
+    }
+    
+    .content-details{
+        /*%%%%% USO DE flexbox %%%%%*/
+        display: flex;
+    }
+    
+    .content-estadisticas{
+        /*%%%%% USO DE flexbox %%%%%*/
+        display: flex;
+    }
+    
+    .item1{
+        background: #EFA8B0;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .item2{
+        background: #C79CC8;
+        border-radius: 0px;
+    }
+    
+    
+    .item3{
+        background: #A89CC8;
+        border-radius: 0px;
+    }
+    
+    .item4{
+        background: #9BB2E1;
+        border-radius: 0px;
+    }
+
+    .item5{
+        background: #8CC9F0;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

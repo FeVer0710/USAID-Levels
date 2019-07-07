@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+}
+
+p{
+    display: none;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, .6);
+    box-sizing: border-box;
+    float: left;
+    margin: 1%;
+    padding: 1rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 360px) {
+    body{
+        background: green;
+    }
+
+    section{
+        flex-direction: column;
+        width: 48%;
+    }
+}
+
+@media (min-width: 768px) {
+    body{
+        background: red;
+    }
+
+    section{
+        flex-direction: row-reverse;
+        width: 31.33%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body{
+        background: yellow;
+    }
+
+    section{
+        flex-direction: row;
+        width: 23%;
+    }
+}

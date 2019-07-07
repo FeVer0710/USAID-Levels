@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body{
+    background-color: rgb(139, 15, 255);
+}
+#logo{
+    width: 200px;
+    margin-left: 500px;
+}
+#hero{
+    height:656px;
+}
+.text{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+span{
+    color:rgb(255, 255, 0);
+    font-size: 34px;
+}
+#img{
+    border: 7px solid rgba(89, 3, 126, 0.616);
+}
+.btn{
+   background-color: rgb(255, 255, 0);
+   color:rgb(112, 22, 100);
+}
+h4{
+    color:rgb(255, 255, 255);
+}

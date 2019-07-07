@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(126, 29, 218);
+}
+
+.content{
+    width: 18em;
+    margin: 5vw auto;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Sección logo */
+.sidebar-logo{
+    color: darkgray;
+    text-align: center;
+}
+
+.sidebar-nav{
+    list-style: none;
+    padding: 0;
+
+    /* Para que el contenido crezca o se ajuste */
+    flex-grow: 2;
+}
+
+.sidebar-nav li{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-avatar{
+    text-align: center;
+}
+
+.sidebar-avatar img{
+    border-radius: 50%;
+    width: 25%;
+}
+
+/* Unpoco de estilo hover */
+.sidebar-nav li.active,
+.sidebar-nav li:hover{
+    background-color: aliceblue;
+    color: rgb(126, 29, 218);
+}

@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    background: rgb(4, 4, 102);
+}
+
+.horario{
+    background: rgb(4, 4, 102);
+    flex: 2 1 auto;
+    /* Colocar en bloques */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h4{
+    border-bottom: 0.5mm solid red;
+}
+
+.articulo{
+    background: white;
+    flex: 1 1 20%;
+    height: 300px;
+}
+
+.articuloUltimo{
+    flex: 1 1 45%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1200px){
+    .horario{
+        flex-direction: column;
+        height: 40in;
+        flex-wrap: nowrap;
+    }
+    .articuloUltimo{
+        flex: 1 1 20%;
+    }
+}

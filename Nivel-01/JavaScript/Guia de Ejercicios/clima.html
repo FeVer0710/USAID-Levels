@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperatura</title>
+</head>
+<body><center>
+    <h1>Temperaturas diarias</h1>
+    <p>Promedio para la semana</p>
+    <form action="">
+        <div>
+            <input type="text" id="dg" placeholder="Temperatura Domingo">
+        </div>
+        <br>
+        <div>
+            <input type="text" id="ln" placeholder="Temperatura Lunes">
+        </div>
+        <br>
+        <div>
+            <input type="text" id="mr" placeholder="Temperatura Martes">
+        </div>
+        <br>
+        <div>
+            <input type="text" id="mrc" placeholder="Temperatura Miercoles">
+        </div>
+        <br>
+        <div>
+            <input type="text" id="jv" placeholder="Temperatura Jueves">
+        </div>
+        <br>
+        <div>
+            <input type="text" id="vr" placeholder="Temperatura Viernes">
+        </div>
+        <br>
+        <div>
+            <input type="text" id="sb" placeholder="TemperaturaSabado">
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Promediar" id="promediar">
+        </div>
+    </form>
+    <br>
+    <table border="2">
+        <tr>
+            <th>Temperatura Promedio</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td id="salida">°C</td>
+            <td id="salida2"></td>
+        </tr>
+    </table>
+    <script src="js/clima.js"></script>
+</center>
+    
+</body>
+</html>

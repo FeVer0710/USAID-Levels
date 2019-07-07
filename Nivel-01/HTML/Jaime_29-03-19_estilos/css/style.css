@@ -1,0 +1,13 @@
+#titulo{
+    color: blue;
+    color: rgb(0,0,255);
+    color: #ff0000;
+    color: rgba(255,0,0,1);
+    color: #487d96;
+    font-family: sans-serif; /*Lectura*/ 
+    font-family: monospace; /*Lectura*/
+    font-family: cursive;
+    font-family: 'Tahoma';
+    
+
+}

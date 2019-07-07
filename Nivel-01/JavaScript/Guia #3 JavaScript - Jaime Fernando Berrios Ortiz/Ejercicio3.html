@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Idiomas</h1>
+
+    <p>Crear una página que muestre 5 checkbox para seleccionar los idiomas que un usuario sabe hablar (Inglés, Francés, Español, Italiano, Portugués) Mostrar al presionar un botón el número de idiomas que el usuario habla.</p>
+
+    <form>
+        <fieldset>
+            <legend>Selecione los idiomas que sabe:</legend>
+            <input type="checkbox" id="checkbox1"> Inglés
+            <br><br>
+            <input type="checkbox" id="checkbox2"> Francés
+            <br><br>
+            <input type="checkbox" id="checkbox3"> Español
+            <br><br>
+            <input type="checkbox" id="checkbox4"> Italiano
+            <br><br>
+            <input type="checkbox" id="checkbox5"> Portugués
+            <br><br>
+            <input type="button" value="Mostrar" onclick="mostrarSelecionados()">
+        </fieldset>
+    </form>
+
+    <script>
+    
+        function mostrarSelecionados(){
+            var cantidad=0;
+            if(document.getElementById('checkbox1').checked){
+                cantidad++;
+            }
+            if(document.getElementById('checkbox2').checked){
+                cantidad++;
+            }
+            if(document.getElementById('checkbox3').checked){
+                cantidad++;
+            }
+            if(document.getElementById('checkbox4').checked){
+                cantidad++;
+            }
+            if(document.getElementById('checkbox5').checked){
+                cantidad++;
+            }
+            alert('Usted sabe '+cantidad+' idiomas')
+        }
+    
+    </script>
+
+<br>
+<a href="Ejercicio2.html">Ir al Ejercicio 2</a>
+<br> <br>
+<a href="Ejercicio4.html">Ir al Ejercicio 4</a>
+</body>
+</html>

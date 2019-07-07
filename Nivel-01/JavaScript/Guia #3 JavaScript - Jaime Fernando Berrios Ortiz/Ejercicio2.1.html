@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <script language="javascript">
+                var r1, r2, r3, r4;
+                var a1, a2, a3, a4;
+                var Tcorrectas, Tincorrectas;
+               function Calcular()
+                {
+                 r1=document.examen.respuesta1.value;
+                 r2=document.examen.respuesta2.value;
+                 r3=document.examen.respuesta3.value;
+                 r4=document.examen.respuesta4.value;
+                 
+                         if(r1==1)
+                      a1=1;
+                         else
+                  a1=0;
+              
+              
+                         if(r2==1)
+                  a2=1;
+                        else
+                  a2=0;
+              
+              
+                         if(r3==1)
+                  a3=1;
+                         else
+                  a3=0;
+              
+              
+                         if(r4==1)
+                  a4=1;
+                         else
+                  a4=0;
+                  
+                 Tcorrectas = a1 + a2 + a3 + a4;
+                 Tincorrectas = 4 - Tcorrectas;
+                 document.examen.total1.value=Tcorrectas;
+                 document.examen.total2.value=Tincorrectas;
+                }
+                
+                  </script>
+                      <form name="examen">
+                          <fieldset><br><br>
+                          1. ¿Cuántas patas tiene una araña?<br><br>
+                           <select name="respuesta1">
+                            <option value="">Seleccione...</option>  
+                            <option value=1>8</option>
+                           <option value=0>5</option>
+                           </select><br><br>
+                          2. ¿Qué planeta es el más cercano al Sol?<br><br>
+                           <select name="respuesta2">
+                           <option value="">Seleccione...</option>
+                           <option value=1>Mercurio</option>
+                           <option value=0>Saturno</option>
+                           </select><br><br>
+                          3. ¿En qué ciudad y en qué país se encuentra la Torre Eiffel?<br><br>
+                           <select name="respuesta3">
+                           <option value="">Seleccione...</option>
+                           <option value=1>Paris</option>
+                           <option value=0>Guatemala</option>
+                           </select><br><br>
+                          4. ¿Cuantos minutos tiene una hora?<br><br>
+                           <select name="respuesta4">
+                           <option value="">Seleccione...</option>
+                           <option value=1>60</option>
+                           <option value=0>80</option>
+                           </select><br><br>
+              
+               <input type="button" value="Calcular" onclick="Calcular()"><br><br> <br>
+               Correctas: <input type="text" name="total1"><br> <br>
+               Incorrectas: <input type="text" name="total2"><br><br> 
+              </fieldset>
+              </form>
+<br>
+<a href="Ejercicio3.html">Ir al Ejercicio 3</a>
+    
+</body>
+</html>

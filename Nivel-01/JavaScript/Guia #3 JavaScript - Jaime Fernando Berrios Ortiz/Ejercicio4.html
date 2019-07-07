@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Nivel de Inglés</h1>
+
+    <p>Crear un programa que muestre tres objetos de la clase RADIO solicitando que seleccione el nivel de inglés (Alto, medio, básico). Al presionar un botón mostrar un alert indicando su nivel de inglés.</p>
+    
+    <form>
+        <fieldset>
+            <legend>¿Cuál es su nivel de Inglés?</legend>
+            <input type="radio" id="radio1" name="ingles"> Básico
+            <br>
+
+            <input type="radio" id="radio2" name="ingles"> Medio
+            <br>
+
+            <input type="radio" id="radio3" name="ingles"> Alto
+            <br>
+
+            <input type="button" value="Verificar" onclick="Verificar()">
+        </fieldset>
+    </form>
+
+    <script>
+    
+        function Verificar(){
+            if(document.getElementById('radio1').checked){
+                alert('Su nivel de Inglés es Básico');
+            }
+            else{
+                if(document.getElementById('radio2').checked){
+                    alert('Su nivel de Inglés es Medio');
+                }
+                else{
+                    alert('Su nivel de Inglés es Alto')
+                }
+            }
+        }
+    
+    </script>
+
+<br>
+<a href="Ejercicio3.html">Ir al Ejercicio 3</a>
+    
+</body>
+</html>

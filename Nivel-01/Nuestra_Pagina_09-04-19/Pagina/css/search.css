@@ -1,0 +1,45 @@
+#input-search{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+.content-search{
+    width: 90%;
+    height: 40vh;
+    position: unset;
+    top: 100px;
+    left: 50%;
+    
+    display: none;
+}
+
+.content-table{
+    width: 100%;
+    max-height: 200px;
+    height: auto;
+    background: rgb(40, 157, 69);
+    margin-left: 10px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.content-table table{
+    width: 100%;
+}
+
+tbody tr td .link-menu{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+tbody tr td .link-menu:hover{
+    background: rgb(0, 123, 255);
+}
+
+#table_length, #table_filter, #table_info, #table_paginate{
+    display: none;
+}

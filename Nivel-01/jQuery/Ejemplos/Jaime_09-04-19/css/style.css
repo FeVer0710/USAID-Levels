@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
+@import url('https://fonts.googleapis.com/css?family=Condiment');
+
+body{
+    background-color: chocolate;
+}
+
+#div1{
+    background-color: darkmagenta;
+    width: 300px;
+    height: 300px;
+}
+#div2{
+    background-color: deepskyblue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    font-size: 0px;
+}
+
+h1 {
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    color: aqua;
+    font-family: 'Condiment', cursive;
+    text-align: justify;
+    font-size: 30px;
+}

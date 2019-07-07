@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <div>
+                <label>
+                    Ingrese el porcentaje de la gasolina:
+                    <input type="number" id="gasolina" min="0" max="100">
+                </label>
+            </div>
+            <div>
+                <input type="button" value="Aceptar" onclick="Gasolina()">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+    
+    function Gasolina(){
+        var gasolina;
+
+        gasolina = document.getElementById('gasolina').value;
+        gasolina = parseInt(gasolina);
+
+        while (gasolina>0){
+            alert('Gasolina restante '+gasolina);
+
+            //gasolina = gasolina-1;
+            gasolina--;
+        }
+
+        alert('Ya no tiene gasolina');
+    }
+    
+    </script>
+
+</body>
+</html>

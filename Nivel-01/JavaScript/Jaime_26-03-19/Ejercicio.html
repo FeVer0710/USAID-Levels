@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        Ingrese su nombre de usuario: <input type="text"> <br>
+        Ingrese su contraseña: <input type="text" id="clave1"> <br>
+        Ingrese nuevamente su contraseña: <input type="text" id="clave2"> <br> <br>
+        <input type="button" value="Registrar Usuario" onclick="registro()">
+    </form>
+
+    <script>
+    
+        function registro(){
+            var clave1, clave2;
+
+            clave1 = document.getElementById('clave1').value;
+            clave2 = document.getElementById('clave2').value;
+
+            if (clave1==clave2){
+                alert('Usuario registrado con éxito');
+            }
+            else{
+                alert('Contraseñas no coinciden!');
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

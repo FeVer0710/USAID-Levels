@@ -1,0 +1,176 @@
+html {
+    box-sizing: border-box; /*nos permite incluir el relleno y el borde en el ancho y alto total del elemento*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.contenedor {
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+/*Estilo para la navegación*/
+nav {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navegation {
+    background-color: #00b8e4;
+}
+
+nav ul {
+    /*Quitar las viñetas*/
+    list-style: none;
+}
+
+nav > ul > li {
+    /*Elemento flotante hacia la izquierda*/
+    float: left;
+}
+
+nav::after{ /*Limpiar elementos flotantes*/
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul li a {
+    display: inline-block; /*seccione los elementos*/
+    width: 200px;
+    color: white;
+    /*Quitar linea azul*/
+    text-decoration: none;
+    /*Alinear al centro*/
+    text-align: center;
+    /*Espacio entre cada ítem*/
+    padding: 20px;
+}
+
+nav ul li a:hover/*Pequeño efecto*/ {
+    background-color: #29c5ec;
+}
+
+/*Esconder sub menú*/
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: #00b8e4;
+    display: none;
+}
+
+/*Mostrar el sub menú cuando se presione sobre el menú*/
+nav ul li:hover>ul {
+    display: block;
+}
+
+div.contenido::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+main {
+    width: 70%;
+    float: left;
+    /*margin-top: 30px;*/
+    padding: 40px;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    margin-top: 30px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+article {
+    margin-top: 30px;
+}
+
+article img {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+
+article {
+    line-height: 2;
+    text-align: justify;
+}
+
+.boton {
+    background-color: #00b8e4;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 10px 0 10px 10px;
+}
+
+aside ul li a{
+    color: #00b8e4;
+    text-decoration: none;
+}
+
+aside ul li a:hover{
+    color: white;
+    background-color: #00b8e4;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #00b8e4;
+    padding-top: 40px;
+    margin-top: 40px;
+    color: white; 
+}
+
+footer .contenedor::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer div.nosotros {
+    float: left;
+    width: 40%;
+    color: white;
+    text-align: center;
+}
+
+footer div.menu{
+    float: right;
+    width: 40%;
+}
+
+footer nav {
+    width: auto;
+}
+
+footer nav ul li a {
+    width: auto;
+}
+
+i {
+    margin-right: 5px;
+    font-size: 20px;
+}

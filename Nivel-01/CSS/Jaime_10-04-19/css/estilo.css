@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+
+@import url('https://fonts.googleapis.com/css?family=Condiment');
+
+body {
+    /*Propiedad para cambiar el fondo*/
+    background-color: gainsboro;
+}
+
+h1 {
+    color: red;
+    /*Propiedad para centrar el text*/
+    text-align: center;
+    /*Propiedad para cambiar tipografía*/
+    font-family: 'Dancing Script', cursive;
+}
+
+#text {
+    color: blue;
+    /*Aumentar tamaño*/
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.parrafo {
+    color: black;
+    font-size: 40px;
+    font-family: 'Condiment', cursive;
+}

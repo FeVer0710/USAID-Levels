@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Press+Start+2P');
+*{
+    padding: 0.1rem;
+}
+body{
+    background-color: #00ffb3; 
+}
+h1{
+    color: royalblue;
+}
+#sub{
+    font-size: 30px;
+    color: rgb(255, 71, 209);
+}
+.contenedor, .contenedor1{
+    background: whitesmoke;
+    height: 200px;
+    margin: 5px;
+}
+p{
+    font-size: 20px;
+    color: red;
+}
+.contenedor p{
+    color: blue;
+}
+.contenedor p{
+    color: rgb(0, 255, 42);
+
+}
+.contenedor1>p{
+    color: blue;
+}
+a:hover{
+    background: cadetblue;
+    font-size: 50px;
+}
+#fuente{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+#fuente{
+    text-shadow: 2px 2px 4px rgb(0, 238, 255);
+}

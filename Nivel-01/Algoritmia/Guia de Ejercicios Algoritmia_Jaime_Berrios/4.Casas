@@ -1,0 +1,21 @@
+Algoritmo Casas
+	Definir CostoCasa, Ingresos, Enganche, PagoMensual, PagoParcial Como Real;
+	Escribir "Ingrese el precio de la casa:";
+    Leer CostoCasa;
+    Escribir "Ingrese el valor de ingresos del comprador:";
+    Leer Ingresos;
+    Si Ingresos<8000 Entonces
+        Enganche=(CostoCasa*0.15);
+        PagoMensual=120;
+		//120=(10años*12meses que tiene un año)
+    SiNo
+        Enganche=(CostoCasa*0.30);
+        PagoMensual=84;
+		//84=(7años*12meses que tiene un año)
+    FinSi
+    PagoParcial=(CostoCasa-Enganche)/PagoMensual;
+    Escribir "Pago por concepto de enganche: $",Enganche;
+    Escribir "Pago mensual: $",PagoMensual;
+    Escribir "Valor de pago parcial: $",PagoParcial;
+FinAlgoritmo
+//Jaime Fernando Berríos Ortíz

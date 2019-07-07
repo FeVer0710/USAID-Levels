@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Conversor</h1>
+
+    <p>Realizar un script que permita convertir temperaturas ya sea de Celsius a Fahrenheit ó Fahrenheit a Celsius, según determine el usuario.</p>
+
+    <form action="">
+        <fieldset>
+        <legend>Celsius a Fahrenheit</legend>
+        <div>
+            <label for="">
+                Cantidad de grados Celsius:<input type="text" id="Celsius1">
+            </label>
+        </div>
+        <div>
+            <input type="button" value="Convertir" onclick="Conversor1()">
+        </div>
+        <div>
+            <label for="">
+                Resultado:
+                <input type="text" id="Fahrenheit1">
+            </label>
+        </div>
+        </fieldset>
+        <br>
+
+        <fieldset>
+        <legend>Fahrenheit a Celsius</legend>
+        <div>
+            <label for="">
+                Cantidad de grados Fahrenheit:<input type="text" id="Fahrenheit2">
+            </label>
+        </div>
+        <div>
+            <input type="button" value="Convertir" onclick="Conversor2()">
+        </div>
+        <div>
+            <label for="">
+                Resultado:
+                <input type="text" id="Celsius2">
+            </label>
+        </div>
+        </fieldset>
+    </form>
+
+    <script src="js/conversor.js"></script>
+    
+</body>
+</html>

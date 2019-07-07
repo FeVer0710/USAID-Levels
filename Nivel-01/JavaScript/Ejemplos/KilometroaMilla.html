@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset>
+        <legend>Conversor</legend>
+        <div>
+            <label for="">
+                Número de Kilómetros:<input type="text" id="kilometros">
+            </label>
+        </div>
+        <div>
+            <input type="button" value="Convertir" onclick="Conversor()">
+        </div>
+        <div>
+            <label for="">
+                Millas:
+                <input type="text" id="millas">
+            </label>
+        </div>
+        </fieldset>
+    </form>
+
+    <script>
+        function Conversor(){
+            var kilometros, millas;
+
+            kilometros = document.getElementById('kilometros').value;
+            kilometros = parseFloat(kilometros);
+
+            millas = (kilometros * 0.62);
+
+            document.getElementById('millas').value=millas;
+        }
+    </script>
+
+</body>
+</html>

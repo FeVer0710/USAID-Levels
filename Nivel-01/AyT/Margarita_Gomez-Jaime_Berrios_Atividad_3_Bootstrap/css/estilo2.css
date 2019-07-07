@@ -1,0 +1,41 @@
+
+.color1 {
+    height: 850px;
+    background-color: rgb(0, 42, 108); 
+}
+
+.color2 {
+    height: 120px;
+    background-color: white; 
+}
+
+h1{
+    color: rgb(21, 197, 197);
+    text-align: center;
+}
+
+.color3 {
+    height: 250px;
+    background-color: white; 
+}
+
+hr {
+    height: 1px;
+    background-color: red;
+    border: 5px solid white;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid red;
+}
+
+.parraf{
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(0, 42, 108);
+}

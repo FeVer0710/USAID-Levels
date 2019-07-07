@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Sancreek');
+
+@import url('https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow');
+
+body {
+    background-image: url("../img/pexels-photo-2086917.jpeg");
+    background-repeat: no-repeat;
+    /*background-repeat: repeat-x;*/
+    background-size: 100% 300%;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Sancreek', cursive;
+    font-size: 60px;
+}
+
+h3 {
+    color: blanchedalmond;
+    font-size: 45px;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
+ul {
+    color: lightcoral;
+    font-size: 30px;
+}
+li {
+    list-style-position: inside;
+}
+

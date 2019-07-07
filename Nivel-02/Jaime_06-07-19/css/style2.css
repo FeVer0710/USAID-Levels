@@ -1,0 +1,39 @@
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1{
+    font-size: 4vmax;
+}
+
+.seccion1{
+    background-color: aqua;
+}
+
+.seccion2{
+    background-color: yellow;
+}
+
+.seccion3{
+    background-color: blue;
+}
+
+.seccion4{
+    background-color: blanchedalmond;
+}
+
+.seccion5{
+    background-color: red;
+}
+
+.seccion6{
+    background-color: blueviolet;
+}
+
+html, body{
+    overflow-x: hidden;
+}

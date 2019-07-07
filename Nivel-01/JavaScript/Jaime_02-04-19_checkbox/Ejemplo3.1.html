@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Objeto tipo Select</h1>
+
+    <form>
+        <fieldset>
+            <legend>Seleccione su pizza, complemeto y bebida favorita</legend>
+            Seleccione su Pizza: <select id="pizza" onchange="totalaPagar()">
+                <option value="8">Jamón y Peperoni</option>
+                <option value="12">Piña</option>
+                <option value="12">Carne</option>
+                <option value="16">Suprema</option>
+            </select>
+            <br><br>
+
+            Seleccione su Complemento:<select id="complemento" onchange="totalaPagar()">
+                <option value="3">Palitroque</option>
+                <option value="2.50">Pan con ajo</option>
+            </select>
+            <br><br>
+
+            Seleccione su Bebida:<select id="bebida" onchange="totalaPagar()">
+                <option value="1">Soda</option>
+                <option value="1">Té</option>
+            </select>
+            <br><br>
+
+            <input type="button" value="Total" onclick="totalaPagar()">
+            <br><br>
+
+            Total a Pagar <input type="text" id="mensaje">
+        </fieldset>
+    </form>
+
+    <script>
+    
+        function mostrarPrecioPizza(){
+            document.getElementById('mensaje').value=document.getElementById('pizza').options[document.getElementById('pizza').selectedIndex].value;
+        }
+
+        function totalaPagar(){
+            var pizza, complemento, bebida;
+            var precio1, precio3, precio3, suma;
+
+            pizza = document.getElementById('pizza');
+            precio1 = pizza.options[pizza.selectedIndex].value;
+
+            complemento = document.getElementById('complemento');
+            precio2 = complemento.options[complemento.selectedIndex].value;
+
+            bebida = document.getElementById('bebida');
+            precio3 = bebida.options[bebida.selectedIndex].value;
+
+            suma = (precio1 + precio2 + precio3);
+        }
+    
+    </script>
+    
+</body>
+</html>

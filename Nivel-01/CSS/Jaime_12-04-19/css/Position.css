@@ -1,0 +1,32 @@
+/*.relative {
+    width: 400px;
+    height: 200px;
+    background: rgb(226, 226, 167);
+    position: relative;
+}
+
+.absolute {
+    width: 200px;
+    height: 100px;
+    background: rgb(240, 240,18);
+    position: absolute;
+}*/
+
+.container {
+    position: relative;
+}
+
+img {
+    opacity: 0.6;
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    width: 100px;
+    top: 50%;
+    left: 0;
+    color: white;
+}

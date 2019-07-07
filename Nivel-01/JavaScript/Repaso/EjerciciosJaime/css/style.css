@@ -1,0 +1,65 @@
+.navbar a{
+padding: 0 70px;
+}
+
+.imgBg {
+    background-image: url("../img/analysis-coffee-cup-1549702-ot.jpg");
+    height: 100vh;
+    background-size: conver;
+    background-position: center;
+}
+
+#title1{
+    padding-top: 250px;
+}
+
+#title1, #parraf1{
+    text-align: center;
+}
+
+.btn1{
+    display: flex;
+    justify-content: center;
+}
+
+.color1{
+    height: 1000px;
+}
+
+.color2 {
+    height: 220px;
+    background-color: white;
+}
+
+#title2, #sub{
+    text-align: center;
+}
+
+#icon{
+    border-radius: 70px;
+    background-color: rgb(252, 252, 0);
+}
+
+.cl{
+    background-color: rgb(57, 63, 73);
+    border-radius: 10px;
+    height: 410px;
+    padding: 20px;
+}
+
+.btn2{
+    float: right;
+}
+
+.btn-circle.btn-lg {
+    width: 75px;
+    height: 75px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 40px;
+}
+
+p{
+    text-align: justify;
+}

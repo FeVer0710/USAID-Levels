@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset>
+        <legend>Conversor</legend>
+        <div>
+            <label for="">
+                Número de libras:<input type="text" id="libras">
+            </label>
+        </div>
+        <div>
+            <input type="button" value="Convertir" onclick="Conversor()">
+        </div>
+        <div>
+            <label for="">
+                Kilogramos:
+                <input type="text" id="kilogramos">
+            </label>
+        </div>
+        </fieldset>
+    </form>
+
+    <script>
+        function Conversor(){
+            var libras, kg;
+
+            libras = document.getElementById('libras').value;
+            libras = parseFloat(libras);
+
+            kg = (libras / 2.2046);
+
+            kg = kg * 100;
+            kg = Math.round(kg); //Redondear
+            kg = kg / 100;
+            
+            document.getElementById('kilogramos').value=kg;
+        }
+    </script>
+
+</body>
+</html>

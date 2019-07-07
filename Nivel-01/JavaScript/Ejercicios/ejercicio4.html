@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Ejercicio 4</h1>
+
+    <script>
+    
+        var precioCasa, ingresos, enganche, pagoMensual, pagoParcial;
+
+        precioCasa = parseInt(prompt('Ingrese el precio de la casa'));
+
+        ingresos = parseInt(prompt('Ingrese el valor de ingresos del comprador'));
+
+        if(ingresos<8000){
+            enganche=(precioCasa*0.15);
+            pagoMensual=(10*12);
+        }
+        else{
+            enganche=(precioCasa*0.30);
+            pagoMensual=(7*12);
+        }
+        pagoParcial=(precioCasa-enganche)/pagoMensual;
+
+        document.write('Pago por concepto de enganche: $'+enganche);
+        document.write('<br>');
+        document.write('Pago mensual: $'+pagoMensual);
+        document.write('<br>');
+        document.write('Valor del pago parcial: $'+pagoParcial);
+
+    </script>
+</body>
+</html>

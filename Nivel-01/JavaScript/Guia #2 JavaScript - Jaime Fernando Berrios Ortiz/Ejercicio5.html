@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Ejercicio #5</h2>
+    <p>Elaborar un programa que permita determinar el total a pagar por una compra de la cual se sabe el valor unitario y la cantidad. Se debe tener en cuenta que se realiza un descuento del 15% por compras inferiores a $20,000 y del 35% por compras mayores o iguales a $20,000.</p>
+    
+    <form>
+        <fieldset>
+            <div>
+                <label>
+                    Ingrese el valor unitario del producto: <input type="number" min="0" id="valor">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese la cantidad de productos: <input type="number" min="0" id="cantidad">
+                </label>
+            </div>
+            <div>
+                <input type="button" value="Calcular Total a Pagar" onclick="calcularDescuento()">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+    
+        function calcularDescuento(){
+            var valor, cantidad, resultado, descuento1, descuento2, pagoTotal1, pagoTotal2;
+
+            valor = document.getElementById('valor').value;
+            valor = parseFloat(valor);
+            cantidad = document.getElementById('cantidad').value;
+            cantidad = parseInt(cantidad);
+
+            resultado = (valor*cantidad);
+
+            if(resultado>=20000){
+                descuento1 = (resultado*0.35);
+                pagoTotal1 = (resultado-descuento1);
+
+                alert('Se le aplicó un 35% de descuento. El total a pagar es de $'+pagoTotal1);
+            }
+            else{
+                descuento2 = (resultado*0.15);
+                pagoTotal2 = (resultado-descuento2);
+
+                alert('Se le aplicó un 15% de descuento. El total a pagar es de $'+pagoTotal2);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

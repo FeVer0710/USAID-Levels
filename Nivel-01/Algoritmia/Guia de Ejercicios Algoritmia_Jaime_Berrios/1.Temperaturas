@@ -1,0 +1,28 @@
+Algoritmo Temperaturas
+	Definir Dom, Lun, Mar, Mie, Jue, Vie, Sab, Tem Como Entero;
+	Escribir "Ingrese la temperatura del día Domingo:";
+	Leer Dom;
+	Escribir "Ingrese la temperatura del día Lunes:";
+	Leer Lun;
+	Escribir "Ingrese la temperatura del día Martes:";
+	Leer Mar;
+	Escribir "Ingrese la temperatura del día Miércoles:";
+	Leer Mie;
+	Escribir "Ingrese la temperatura del día Jueves:";
+	Leer Jue;
+	Escribir "Ingrese la temperatura del día Viernes:";
+	Leer Vie;
+	Escribir "Ingrese la temperatura del día Sábado:";
+	Leer Sab;
+	Tem = (Dom+Lun+Mar+Mie+Jue+Vie+Sab)/7;
+	Si Tem>=15 y Tem<=35 Entonces
+		Escribir "¡Qué clima tan delicioso!";
+	SiNo
+		Si Tem>35 Entonces
+			Escribir "¡Qué semana tan caluroso!";
+		SiNo
+			Escribir "¡Qué semana tan fría!"
+		FinSi
+	FinSi
+FinAlgoritmo
+//Jaime Fernando Berríos Ortíz

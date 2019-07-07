@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabajando con multimedia en HTML 5</h1>
+    <video src="video/codigo.mp4" controls width="450px" poster="img/thumb_600x0_Pop-Corn.png"></video>
+    <video src="video/Aerial Shot Of Forest Covered In Snow.mp4" width="500px" controls autoplay loop></video>
+    <video controls width="450px" preload="metadata"> <!--preload=none,auto,metadata-->
+        <source src="video/Pexels Videos 5020.mp4" type="video/mp4">
+        <source src="video/codigo.webm" type="video/webm">
+        <source src="video/codigo.ogv" type="video/ogg">
+            <p>Tu navegador no soporta el video</p>
+    </video>
+
+    <h2>Trabajando con Audio</h2>
+    <audio src="audio/audio.oga" controls><!--formato soportado por la web--></audio>
+    <audio autoplay>
+        <source src="audio/audio.m4a" type="audio/mp4">
+        <source src="audio/audio.oga" type="audio/ogg">
+    </audio>
+
+</body>
+</html>

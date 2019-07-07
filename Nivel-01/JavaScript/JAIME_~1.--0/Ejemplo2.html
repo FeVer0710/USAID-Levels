@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Objeto Radio</h1>
+
+    <form>
+        <fieldset>
+            <legend>¿Eres mayor de edad?</legend>
+            <input type="radio" id="radio1" name="edad"> Si
+            <br>
+            <input type="radio" id="radio2" name="edad"> No
+            <br>
+            <input type="button" value="Verificar" onclick="Verificar()">
+        </fieldset>
+    </form>
+
+    <script>
+    
+        function Verificar(){
+        if(document.getElementById('radio1').checked)
+        {
+            alert('Eres mayor de edad');
+        }
+        if(document.getElementById('radio2').checked){
+            alert('No eres mayor de edad');
+        }
+    }
+    
+    </script>
+
+</body>
+</html>

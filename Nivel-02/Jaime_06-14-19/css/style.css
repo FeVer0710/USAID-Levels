@@ -1,0 +1,103 @@
+body{
+    font-family: sans-serif;
+    /* FLEXBOX */
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+}
+
+header{
+    height: 30vh;
+    background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* FLEXBOX */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+header p{
+    color: #fff;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* Estilo al menu */
+nav{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+nav>a{
+    text-decoration: none;
+    margin-left: 3em;
+    color: #08def1;
+    font-size: 1.5em;
+}
+
+/* Estilo al main */
+main{
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+
+    /*  */
+    flex: 1 1 70%;
+}
+
+aside{
+    display: flex;
+    padding: 1rem 0 1rem 2rem;
+    flex: 1 1 30%;
+}
+
+footer{
+    min-height: 150px;
+    height: 10vh;
+    padding: 1rem 0.5rem;
+    background-color: #334d5c;
+    color: white;
+
+    /* FLEXBOX */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul>li{
+    list-style: none;
+    margin: 0rem;
+    font-size: 1em;
+}
+
+footer ul>li a{
+    color: white;
+}

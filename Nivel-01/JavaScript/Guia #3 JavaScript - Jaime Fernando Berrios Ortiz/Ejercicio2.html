@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Cuestionario</h1>
+
+    <p>Crear una página que muestre un examen de opción múltiple. Se debe mostrar una pregunta y seguidamente un objeto SELECT con las respuestas posibles. Al presionar un botón mostrar la cantidad de respuestas correctas e incorrectas (Disponer 4 preguntas y sus respectivos controles SELECT).</p>
+    
+    <form>
+        <fieldset>
+            <legend>Conteste las siguientes preguntas:</legend>
+            1-¿Qué es un dato? <select id="pregunta1">
+                <option value="1">a)Son representaciones simbólicas de un determinado atributo o variable cualitativa o cuantitativa.</option>
+                <option value="2">b)Son un conjunto de programas que se retransmiten por radio o televisión.</option>
+            </select>
+            <br><br>
+
+            2-¿Qué es un gestor de bases de datos? <select id="pregunta2">
+                <option value="3">a)Es un lugar donde podemos estudiar en línea.</option>
+                <option value="4">b)Es un conjunto de programas que permiten el almacenamiento, modificación y extracción de la información en una base de datos.</option>
+            </select>
+            <br><br>
+
+            3-¿Cuál de los siguientes, es un gestor de bases de datos? <select id="pregunta3">
+                <option value="5">a)PowerPoint</option>
+                <option value="6">b)MySQL</option>
+            </select>
+            <br><br>
+
+            4-Es una herramienta para el modelado de datos que permite representar las entidades relevantes de un sistema de información así como sus interrelaciones y propiedades: <select id="pregunta4">
+                <option value="7">a)Modelo Entidad-Relación</option>
+                <option value="8">b)Modelo Causa-Efecto</option>
+            </select>
+            <br><br>
+
+            <input type="button" value="Revisar" onclick="Resultados()">
+        </fieldset>
+    </form>
+    
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <br>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <br>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <br>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <script>
+    
+        function Resultados(){
+
+            var x = document.getElementById('pregunta1').value;
+            var y = document.getElementById('pregunta2').value;
+            var z = document.getElementById('pregunta3').value;
+            var w = document.getElementById('pregunta4').value;
+        
+            if (x == "1"){
+            document.getElementById("demo").innerHTML = "En la pregunta 1, usted eligió la opción a) y la respuesta es correcta.";
+            }
+            else{
+            document.getElementById("demo1").innerHTML = "En la pregunta 1, usted eligió la opción b) y la respuesta es incorrecta.";
+            }
+        
+            if (y == "3"){
+            document.getElementById("demo2").innerHTML = "En la pregunta 2, usted eligió la opción a) y la respuesta es incorrecta.";
+            }
+            else{
+            document.getElementById("demo3").innerHTML = "En la pregunta 2, usted eligió la opción b) y la respuesta es correcta.";
+            }
+
+            if (z == "5"){
+            document.getElementById("demo4").innerHTML = "En la pregunta 3, usted eligió la opción a) y la respuesta es incorrecta.";
+            }
+            else{
+            document.getElementById("demo5").innerHTML = "En la pregunta 3, usted eligió la opción b) y la respuesta es correcta.";
+            }
+
+            if (w == "7"){
+            document.getElementById("demo6").innerHTML = "En la pregunta 4, usted eligió la opción a) y la respuesta es correcta.";
+            }
+            else{
+            document.getElementById("demo7").innerHTML = "En la pregunta 4, usted eligió la opción b) y la respuesta es incorrecta.";
+            }
+        }
+    
+    </script>
+
+    <br>
+    <a href="Ejercicio1.html">Ir al Ejercicio 1</a>
+    <br> <br>
+    <a href="Ejercicio3.html">Ir al Ejercicio 3</a>
+
+</body>
+</html>

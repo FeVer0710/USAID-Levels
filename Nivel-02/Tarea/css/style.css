@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dekko&display=swap');
+h5{
+        color: darkmagenta;
+        font-family: 'Bungee Inline', cursive;
+}
+
+p{
+        font-family: 'Dekko', cursive; 
+}
+
+h2{
+        color: white;
+}
+
+#boton-izquierda,#boton-derecha{
+        color:white;                       
+        font-size: 3vw;
+} 
+#icono {
+        color:violet;
+        font-size:30px;
+}
+
+#letra {
+        font-family: 'Oswald', sans-serif;
+        font-size:22px;
+}
+
+.font {
+        font-family:'Oswald', sans-serif;
+        background-color:darkmagenta;
+        color:white;
+}
+
+.fer{
+        color:white;
+}
+
+a:link {
+        text-decoration:none;
+}
+
+.backContainer  {
+        background-color:white;
+}
+
+.sinBolillos {
+        list-style: none;
+}
+
+.font2 {
+        font-family:'Oswald', sans-serif;
+} 
+.fontTitulo {
+        font-family:'Oswald', sans-serif;
+}
+
+small {
+  visibility: hidden;
+}

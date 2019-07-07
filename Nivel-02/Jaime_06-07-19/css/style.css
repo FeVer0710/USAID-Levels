@@ -1,0 +1,23 @@
+.title{
+    height: 75vh;
+    background-color: brown;
+}
+
+.sub-title{
+    height: 25vh;
+    background-color: blueviolet;
+}
+
+.title, .sub-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 50vw;
+}
+
+html, body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

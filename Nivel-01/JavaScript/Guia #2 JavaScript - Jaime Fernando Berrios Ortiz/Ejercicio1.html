@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Ejercicio #1</h2>
+    <p>Elaborar una función que haga las 4 operaciones básicas (suma, resta, multiplicación y división). Pedir 2 números.</p>
+    
+    <form>
+        <fieldset>
+            <legend>Calculadora</legend>
+            <div>
+                <label>
+                    Ingrese un número: <input type="number" id="num1"> 
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese otro número: <input type="number" id="num2">
+                </label>
+            </div>
+            <br>
+            <div>
+                <input type="button" value="Sumar" onclick="Suma()">
+                <input type="button" value="Restar" onclick="Resta()">
+                <input type="button" value="Multiplicar" onclick="Multiplicacion()">
+                <input type="button" value="Dividir" onclick="Division()">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+    
+        function Suma(){
+            var num1, num2, sumar;
+
+            num1 = document.getElementById('num1').value;
+            num1 = parseInt(num1);
+            num2 = document.getElementById('num2').value;
+            num2 = parseInt(num2);
+
+            sumar = (num1 + num2);
+
+            alert('La suma es: '+sumar);
+        }
+
+        function Resta(){
+            var num1, num2, restar;
+
+            num1 = document.getElementById('num1').value;
+            num1 = parseInt(num1);
+            num2 = document.getElementById('num2').value;
+            num2 = parseInt(num2);
+
+            restar = (num1 - num2);
+
+            alert('La resta es: '+restar);
+        }
+
+        function Multiplicacion(){
+            var num1, num2, multiplicar;
+
+            num1 = document.getElementById('num1').value;
+            num1 = parseInt(num1);
+            num2 = document.getElementById('num2').value;
+            num2 = parseInt(num2);
+
+            multiplicar = (num1 * num2);
+
+            alert('La multiplicación es: '+multiplicar);
+        }
+
+        function Division(){
+            var num1, num2, dividir;
+
+            num1 = document.getElementById('num1').value;
+            num1 = parseInt(num1);
+            num2 = document.getElementById('num2').value;
+            num2 = parseInt(num2);
+
+            dividir = (num1 / num2);
+
+            if (num2 == 0){
+                alert('No se puede dividir entre cero')
+            }
+            else {
+                alert('La división es: '+dividir);
+            }
+
+        }
+    
+    </script>
+
+</body>
+</html>

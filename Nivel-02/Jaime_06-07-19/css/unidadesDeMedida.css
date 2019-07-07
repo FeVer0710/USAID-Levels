@@ -1,0 +1,33 @@
+/* 
+REM: Permite establecer tamaños de fuentes basados en el tipo de fuente del elemento html (root) 
+
+EM: Parecido a rem, pero no está sujeto al valor que haya en el html sino que puede heredar
+*/
+
+html{
+    font-size: 100%; /* 100% = 16px */
+}
+
+p{
+    font-size: 1em; /* = 16px */
+}
+
+p{
+    font-size: 2.197em; /* 2.197 x 16px */
+}
+
+h1{
+    font-size: 2em; /* = 32px */
+}
+
+h2{
+    font-size: 21px; /* 21 / 16 = 1.3em */
+}
+
+h3{
+    font-size: 29px; /* 29/16 = 1.8em */
+}
+
+h4{
+    font-size: 1.2em; /* 1.2 * 16 = 19px */
+}

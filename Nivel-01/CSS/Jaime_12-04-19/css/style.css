@@ -1,0 +1,13 @@
+div{
+    border: 2px solid black;
+    background-color: chocolate;
+}
+
+.container {
+    padding: 20px 40px;
+}
+
+.container2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

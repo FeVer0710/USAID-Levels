@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset>
+            <legend>Área</legend>
+            <div>
+                <label for="">
+                    Base: <input type="text" id="base">
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    Altura: <input type="text" id="altura">
+                </label>
+            </div>
+            <div>
+                <input type="button" value="Generar" onclick="Area()">
+            </div>
+            <div>
+                <input type="text" id="resultado">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+    
+        function Area(){
+            var base, altura, resultado;
+
+            base=document.getElementById('base').value;
+            base=parseFloat(base);
+
+            altura=document.getElementById('altura').value;
+            altura=parseFloat(altura);
+
+            resultado=(base*altura)/2;
+
+            document.getElementById('resultado').value=resultado;
+        }
+    
+    </script>
+
+</body>
+</html>

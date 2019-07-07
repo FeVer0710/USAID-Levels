@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var nota1;
+        var nota2;
+        var nota3;
+        var promedio;
+
+        nota1=prompt('Ingrese la primera nota del alumno/a: ');
+        nota1=parseInt(nota1);
+        nota2=prompt('Ingrese la segunda nota del alumno/a: ');
+        nota2=parseInt(nota2);
+        nota3=prompt('Ingrese la tercera nota del alumno/a: ');
+        nota3=parseInt(nota3);
+
+        promedio=(nota1+nota2+nota3)/3;
+
+        if (promedio>=6){
+            document.write('EXCELENTE');
+        }
+        else{
+            document.write('NECESITA MEJORAR');
+        }
+
+    </script>
+</body>
+</html>

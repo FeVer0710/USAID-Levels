@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+        Ingrese su nombre: <input type="text" id="nombre">
+        Ingrese su edad: <input type="text" id="edad">
+        <input type="button" value="Confirmar" onclick="saludo()"> <!--value=nombre el botón-->
+
+    </form>
+
+    <script>
+
+        function saludo(){
+            var nombre;
+            var edad;
+
+            nombre = document.getElementById('nombre').value;//Extraer
+            edad = document.getElementById('edad').value;
+
+            alert('Hola, bienvedido/a '+nombre);
+            alert('Tienes '+edad+ ' años');
+        }
+        
+    </script>
+
+</body>
+</html>

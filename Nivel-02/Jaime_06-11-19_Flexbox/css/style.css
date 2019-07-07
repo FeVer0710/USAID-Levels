@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex-container{
+    background-color: blueviolet;
+    width: 80vw;
+    height: 70vh;
+    margin: 10vh auto;
+    display: flex; /* Define que es un contenedor flexible */
+
+    /* flex-direction: column; */
+    /* flex-wrap: wrap-reverse; */
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container > div {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}

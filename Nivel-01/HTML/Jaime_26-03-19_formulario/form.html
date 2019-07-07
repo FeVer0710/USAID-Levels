@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabajando con formularios</h1>
+    <!--form se define como un método de entrada de datos-->
+    <form action="">
+        <fieldset><!--crea un marco de trabajo que rodea los controles-->
+            <legend>Datos Personales</legend>
+            <input type="text" name="nombre" id="nombre"> <!--type: tipo de entrada, id: reconoce de manera única, un objeto-->
+            <input type="text" name="apellido" id="apellido">
+            <label for="direccion">Dirección</label> <!--for: indica a quién pertenece esa etiqueta-->
+            <input type="text" name="direccion" id="direccion">
+            <label>
+                Teléfono
+                <input type="text" name="telefono" id="telefono">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Educación</legend>
+            <div>
+                <label>
+                    Nivel Educativo
+                    <input type="text" name="estudios" id="estudios" placeholder="Nivel educativo">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Nombre de la Institución
+                    <input type="text" name="institucion" id="institucion" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" id="genero" name="genero" value="Masculino">
+                    Masculino
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" id="genero1" name="genero" value="Femenino">
+                    Femenino
+                </label>
+            </div>
+            <p>Deportes Practicados</p>
+            <div>
+                <label>
+                    <input type="checkbox" name="deporte1" value="bkb">
+                    Baloncesto
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="deporte2" value="fut">
+                    Futbol
+                </label>
+            </div>
+            <div>
+                <label>
+                    Elige tu color favorito
+                    <input type="color" name="favcolor"> <!--mostrar un colorpicker-->
+                </label>
+            </div>
+            <div>
+                <label>
+                Fecha de Nacimiento
+                <input type="date" name="bday">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Correo Electrónico
+                    <input type="email" name="correo">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese su Edad
+                    <input type="number" name="edad" min="15" max="30">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Nombre del Resultado
+                    <input type="text" value="John" readonly>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Nombre del Resultado
+                    <input type="text" value="John" size="80" maxlength="4">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Contraseña
+                    <input type="password">
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form> 
+</body>
+</html>

@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+}
+
+#b1 {
+    font-size: 15px;
+    padding: 3px;
+    border-radius: 15px;
+    width: 125px;
+    color: white;
+    background: grey;
+}
+
+.table-borderless {
+    border: 0px;
+}
+
+p {
+text-align: justify;
+}

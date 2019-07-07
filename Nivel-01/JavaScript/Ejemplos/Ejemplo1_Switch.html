@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <div>
+                <label>
+                    Ingrese un número del 0 al 6:
+                    <input type="number" id="numero" min="0" max="6">
+                </label>
+            </div>
+            <div>
+                <input type="button" value="Aceptar" onclick="Numero()">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+    
+    function Numero(){
+        var numero;
+
+        numero = document.getElementById('numero').value;
+        numero = parseInt(numero);
+
+        switch (numero){
+            case 0:
+            alert('Es Domingo');
+            break;
+
+            case 1:
+            alert('Es Lunes');
+            break;
+
+            case 2:
+            alert('Es Martes');
+            break;
+
+            case 3:
+            alert('Es Miércoles');
+            break;
+
+            case 4:
+            alert('Es Jueves');
+            break;
+
+            case 5:
+            alert('Es Vierns');
+            break;
+
+            case 6:
+            alert('Es Sábado');
+            break;
+
+            default:
+            alert('El número ingresado no es permitido');
+        }
+    }
+    
+    </script>
+
+</body>
+</html>

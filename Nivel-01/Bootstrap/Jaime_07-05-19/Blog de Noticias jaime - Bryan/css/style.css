@@ -1,0 +1,14 @@
+.slider {
+    background: url("images/img_fringe_blue.png");
+    background-size: cover;
+    background-position: center; 
+    height: 300px;
+}
+
+p{
+    text-align: justify;
+}
+
+#col{
+    height: 1600px;
+}

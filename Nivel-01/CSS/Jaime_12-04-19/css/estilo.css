@@ -1,0 +1,40 @@
+div {
+    /*Agregar borde*/
+    border: 1px solid black;
+    background-color: darkgray;
+
+    padding-top: 50px; /*Relleno hacia arriba*/
+    padding-right: 50px; /*Relleno hacia derecha*/
+    padding-bottom: 50px; /*Relleno hacia abajo*/
+    padding-left: 50px; /*Relleno hacia izquierda*/
+}
+
+.container2 {
+    padding: 50px 25px 75px 100px;
+}
+
+.container3 {
+    padding: 25px 75px;
+}
+
+.container4 {
+    padding: 150px;
+    /*Ancho del contenedor*/
+    width: 300px;
+    /*Alto de un contenedor*/
+    height: 300px;
+}
+
+.container5{
+    margin-top: 100px;
+}
+
+.container6 h2{
+    /*Margen hacia arriba*/
+    margin-top: 100px;
+    /*Margen hacia abajo*/
+    margin-bottom: 100px;
+    /*Margen hacia izquierda*/
+    margin-left: 50px;
+    /*Margen hacia derecha*/
+}

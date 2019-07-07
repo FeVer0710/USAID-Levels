@@ -1,0 +1,63 @@
+body{
+    background: #e9e9e9;
+}
+
+.contenedor{
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    padding: 10px;
+    border: 10px solid #2c3e50;
+    margin: 20px;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+
+    /* Este es el mismo que flex-direction y flex-wrap
+    flex-flow:  */
+
+    /* justify-content: space-between; */
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    /* align-content: center;  */
+    /* Esta propiedad sólo funciona para varias líneas de elementos, por ejemplo, wrap */
+}
+
+.elemento{
+    flex: 1;
+    color: #fff;
+    margin: 5px;
+    width: 50px; /* flex-basis es un sinónimo de width */
+    height: 50px;
+    background: #e67e22;
+    text-align: center;
+}
+
+/* .elemento1{
+    order: 3;
+}
+
+.elemento2{
+    order: 4;
+}
+
+.elemento3{
+    order: 1;
+}
+
+.elemento4{
+    order: 2;
+} */
+
+.elemento3{
+    align-self: flex-start;
+    /* height: auto; */
+}

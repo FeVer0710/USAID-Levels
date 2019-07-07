@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-image: url("https://wallpapersite.com/images/wallpapers/geometric-1680x1050-material-design-stock-blue-hd-10122.jpg")
+}
+
+.header h1{
+    color: white;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu li{
+    display:
+}

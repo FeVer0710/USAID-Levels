@@ -1,0 +1,13 @@
+/*Selector por id*/
+#texto{
+    color: blue;
+}
+
+/*Selector por clase*/
+.parrafo{
+    color: blueviolet;
+}
+/*Selector por etiqueta*/
+h1{
+    color:olivedrab;
+}

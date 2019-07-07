@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div>
+                <label>
+                    Que operacion desea realizar
+                </label>
+            </div>
+            <div>
+                <label><input type="radio" name="operaciones" id="suma" value="suma">Suma</label>
+            </div>
+            <div>
+                <label><input type="radio" name="operaciones" id="resta" value="resta">Resta</label>
+            </div>
+            <div>
+                <label><input type="radio" name="operaciones" id="division" value="division">Division</label>
+            </div>
+            <div>
+                <label><input type="radio" name="operaciones" id="multiplicacion" value="multiplicacion">Multiplicacion</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Valores</legend>
+            <div><label>Primer Numero<input type="number" name="numero1" id="n1"></label></div>
+            <div><label>Segundo Numero<input type="number" name="numero2" id="n2"></label></div>
+            <div><label>Resultado<input type="number" name="resultado" id="r"></label></div>
+            <div><button type="button" id="btn">Resultado</button></div>
+        </fieldset>
+    </form>
+    <script src="js/opera.js"></script>
+</body>
+</html>

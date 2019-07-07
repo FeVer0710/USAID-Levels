@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Es o no es vocal</legend>
+            <div>
+                <label>
+                    Digite una letra: <input type="text" id="letra">
+                </label>
+            </div>
+            <div>
+                <input type="button" value="Verificar" onclick="Letras()">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+    
+    function Letras(){
+        var letra;
+
+        letra = document.getElementById('letra').value;
+
+        switch (letra){
+            case a:
+            alert('La letra es una vocal');
+            break;
+
+            case e:
+            alert('La letra es una vocal');
+            break;
+
+            case i:
+            alert('La letra es una vocal');
+            break;
+
+            case o:
+            alert('La letra es una vocal');
+            break;
+
+            case u:
+            alert('La letra es una vocal');
+            break;
+
+            default:
+            alert('La letra no es una vocal');
+        }
+    }
+    
+    </script>
+
+</body>
+</html>

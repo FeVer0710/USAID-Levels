@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Descuento del 20% en compras mayores de $50</h1>
+
+    <form>
+        Ingrese el total a pagar: <input type="text" id="compra">
+        <input type="button" value="Calcular total a pagar" onclick="calcular_desc()">
+    </form>
+
+    <script>
+        function calcular_desc(){
+            var compra, descuento, total_a_pagar;
+
+            compra = document.getElementById('compra').value;
+            compra = parseInt(compra);
+
+            if (compra >= 50) {
+                descuento = (compra * 0.2);
+                total_a_pagar = (compra-descuento);
+                alert ('Tienes descuento!!!, el total a pagar es de: '+total_a_pagar);
+            }
+            else {
+                alert ('No tienes descuento');
+            }
+        }
+    </script>
+</body>
+</html>

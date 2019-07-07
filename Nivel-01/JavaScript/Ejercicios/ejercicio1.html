@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ejercicio 1</h1>
+
+    <script>
+    
+        var domingo, lunes, martes, miercoles, jueves, viernes, sabado, result;
+
+        domingo = parseInt(prompt("Ingrese la temperatura del domingo"));
+
+        lunes = parseInt(prompt("Ingrese la temperatura del lunes"));
+
+        martes = parseInt(prompt("Ingrese la temperatura del martes"));
+
+        miercoles = parseInt(prompt("Ingrese la temperatura del miercoles"));
+
+        jueves = parseInt(prompt("Ingrese la temperatura del jueves"));
+
+        viernes = parseInt(prompt("Ingrese la temperatura del viernes"));
+
+        sabado = parseInt(prompt("Ingrese la temperatura del sabado"));
+
+        result = (domingo+lunes+martes+miercoles+jueves+viernes+sabado)/7;
+
+        if(result>15 && result<35){
+        document.write('¡Qué clima tan delicioso!');
+        }
+        else if(result>=35){
+        document.write('¡Qué semana tan calurosa!');
+        }
+        else{
+        document.write('¡Qué semana tan fría!');
+        }
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+    background-color: rgba(156, 2, 156, 0.979);
+}
+
+.logo{
+	margin:20px auto;
+    display:block;
+    width: 100px;
+}
+
+h6{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.img1{
+    margin:20px auto;
+	float: right;
+    width: 150px;
+}
+
+.img2{
+	margin:20px auto;
+    display:block;
+    width: 150px;
+}
+
+.img3{
+    margin:20px auto;
+	float: left;
+    width: 150px;
+}
+
+.parraf1{
+    text-align: right;
+    padding-right: 50px;
+}
+
+.parraf2{
+    text-align: center;
+}
+
+.parraf3{
+    text-align: left;
+    padding-left: 30px;
+}
+
+.parraf4{
+    text-align: right;
+    padding-right: 35px;
+}
+
+p{
+    color: white;
+}
+
+#btn1{
+    margin-left: 295px;
+}
+
+#btn2{
+    margin-left: 165px;
+}
+
+#btn3{
+    margin-left: 35px;
+}

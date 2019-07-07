@@ -1,0 +1,336 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%% Actividad 04 %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Integrantes: %%%%%%%%%%%%%%%%%
+%%%%%%% Daniela Claribel Eguizábal Argueta %%%%%%%
+%%%%%%%%%% Argelia Margarita Gómez Loza %%%%%%%%%%
+%%%%%%%% Mauricio Edilberto Fuentes Reyes %%%%%%%%
+%%%%%%%%%% Jaime Fernando Berríos Ortíz %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%% ESTILOS GENERALES %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+}
+
+p{
+    text-align: justify;
+    padding: 0.625em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 0 3.125em;
+}
+
+.header {
+    height: 100vh;
+    background: url("../img/beverage-cup-drink-1204651.jpg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: rgba(0, 0, 0, .1);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 9.27vh;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.logo {
+    /*background-color: #eee1df;*/
+    flex: 1 1 auto;
+}
+
+.logo a {
+    color: #000;
+    font-size: 1.875em;
+}
+
+.logo a:hover {
+    color: rgb(219, 102, 190);
+}
+
+.nav {
+    flex: 1 1 auto;
+}
+
+.nav a {
+    color: #000;
+    font-size: 0.938em;
+    text-transform: uppercase;
+    padding: 0 0.625em;
+}
+
+.nav a:hover {
+    border-radius: 50%;
+    background: rgb(219, 102, 190);
+    color: #fff;
+}
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    font-size: 1.125em;
+    color: #000;
+    padding: 0 0.313em;
+}
+
+.social a:hover {
+    border-radius: 50%;
+    background: rgb(219, 102, 190);
+    color: #fff;
+}
+
+.texto-principal {
+    height: 36.250em;
+    display: flex;
+    align-items: center;
+}
+
+.texto-principal p {
+    background: #ecececb7;
+    font-size: 1.313em;
+    color: rgb(219, 102, 190);
+    font-weight: 300;
+    text-align: center;
+}
+
+.texto-principal a {
+    color: #000;
+    font-size: 0.813em;
+    display: inline-block;
+}
+
+.texto-principal img{
+    border-radius: 20%;
+}
+.texto-principal img:hover{
+    border-radius: 30%;
+}
+
+.section {
+    background-color: #f7f7f7;
+    display: flex;
+}
+
+.articulos {
+    background-color: #f7f7f7;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.article2 {
+    flex: 1 1 40%;
+    color: #444;
+    font-size: 0.813em;
+    letter-spacing: 0.063em;
+    margin: 0.625em 0.625em 0 0;
+    /* flex: 1 1 45%; */
+    background-color: #ececec;
+}
+
+.article2 h3 {
+    color: brown;   
+    font-size: 0.813em;
+    padding: 0.625em 0;
+    margin-top: 1.250em;
+    text-align:center;
+}
+
+.article2 h2 {
+    font-size: 1.563em;
+    text-transform: uppercase;
+    padding: 0 0 0.625em 0;
+    color: brown;
+    text-align:center;}
+
+.article2 h4 {
+    font-size: 1.250em;
+    text-transform: uppercase;
+    padding: 0 0 0.625em 0;
+   
+    text-align:center;
+}
+
+.article2 img {
+    display:block;
+    margin:auto;
+}
+
+.article2 p{
+    display:block;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.article {
+    flex: 1 1 40%;
+    color: #444;
+    font-size: 0.813em;
+    letter-spacing: 0.063em;
+    margin: 0.625em 0.625em 0 0;
+    /* flex: 1 1 45%; */
+    background-color: #ececec;
+}
+
+.article img:hover{
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(5deg);
+    width: 99%;
+    border-radius: 10%;
+}
+
+.article h2 {
+    font-size: 1.563em;
+    text-transform: uppercase;
+    padding: 0 0 0.625em 0;
+    color: rgb(219, 102, 190);
+    text-align: center;
+}
+
+.article p {
+    font-size: 1.563em;
+    color: #000;
+    font-size: 1.125em;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article a {
+    color: #fff;
+    font-size: 0.813em;
+    padding: 1.000em;
+    background-color: rgb(219, 102, 190);
+    margin: 1.000em 0;
+    display: inline-block;
+}
+
+.article a:hover {
+    background-color: #546cc3;
+}
+
+.aside {
+    /*background-color: #005792;*/
+    flex: 1 1 auto;
+    margin: 0.625em 0.313em 0.625em 0;
+}
+
+.article-extra h2{
+    color: rgb(219, 102, 190);
+    text-align: center;  
+}
+
+.article-extra p{
+    color: rgb(90, 89, 89); 
+}
+
+.article-extra img{
+    display:block;
+    margin:auto;  
+}
+
+.footer {
+    background-color: rgb(219, 102, 190);
+    display: flex;
+    justify-content: center;
+    margin-top: 0.625em;
+}
+
+.pie {
+    text-align: center;
+}
+
+.pie a {
+    color: #fff;
+    font-size: 0.688em;
+    text-transform: uppercase;
+    padding: 0 0.625em;
+    letter-spacing: 2px;
+}
+
+@media all and (max-width: 1200px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+    
+.aside-info {
+    padding: 3.125em;
+}
+    h1 {
+        font-size: 0.938em;
+    }
+    .texto-principal {
+        height: 25.000em;
+    }
+    .article-extra{
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .articulos {
+        flex-direction: column;
+    }
+    .texto-principal {
+        flex-direction: column;
+    }
+    
+    .texto-principal p{
+        text-align: justify;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .off {
+        display: none;
+    }
+    .nav a {
+        font-size: 1.563em;
+    }
+    .texto-principal {
+        font-size: 0.938em;
+        flex-direction: column;
+    }
+    .articulos{
+        flex-direction: column;
+    }
+    .aside{
+        flex-direction: column;
+    }
+}

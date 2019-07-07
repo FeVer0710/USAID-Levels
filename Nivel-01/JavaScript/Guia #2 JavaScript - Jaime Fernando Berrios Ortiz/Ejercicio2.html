@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Ejercicio #2</h2>
+    <p>Crear un programa que pida dos contraseñas. Colocar un botón que al presionar nos muestre si las dos contraseñas ingresadas son iguales o no.</p>
+
+    <form>
+        <fieldset>
+            <legend>Contraseñas</legend>
+            <div>
+                <label>
+                    Digite su contraseña: <input type="password" id="clave1">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Repita su contraseña: <input type="password" id="clave2">
+                </label>
+            </div>
+            <div>
+                <input type="button" value="Verificar" onclick="Claves()">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+
+        function Claves(){
+            var clave1, clave2;
+
+            clave1 = document.getElementById('clave1').value;
+            clave2 = document.getElementById('clave2').value;
+            
+            if(clave1 == "" || clave2 == "" ) //alt 124 para barra
+            {
+                alert("NO pueden existir campos vacios");
+                return;
+            }
+
+            if(clave1 == clave2){
+                alert('Las contraseñas son iguales');
+            }
+            else{
+                alert('Las contraseñas son diferentes');
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

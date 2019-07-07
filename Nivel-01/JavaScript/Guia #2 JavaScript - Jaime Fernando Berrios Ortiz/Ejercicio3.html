@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Ejercicio #3</h2>
+    <p>Crear un formulario con tres botones con las leyendas "Botón 1", "Botón 2" y "Botón 3". Mostrar un mensaje indicando qué botón se presionó.</p>
+
+    <form>
+        <fieldset>
+            <legend>Presione un botón</legend>
+            <input type="button" value="Botón 1" id="boton1" onclick="Boton1()">
+            <input type="button" value="Botón 2" id="boton2" onclick="Boton2()">
+            <input type="button" value="Botón 3" id="boton3" onclick="Boton3()">
+        </fieldset>
+    </form>
+
+    <script>
+        
+    function Boton1(){
+        var boton1;
+
+        boton1 = document.getElementById('boton1').value;
+
+        alert('Usted presionó el Botón 1');
+    }
+
+    function Boton2(){
+        var boton2;
+
+        boton2 = document.getElementById('boton2').value;
+        alert('Usted presionó el Botón 2');
+    }
+
+    function Boton3(){
+        var boton3;
+
+        boton3 = document.getElementById('boton3').value;
+        alert('Usted presionó el Botón 3');
+    }
+        
+    </script>
+    
+</body>
+</html>

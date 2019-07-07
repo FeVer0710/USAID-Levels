@@ -1,0 +1,14 @@
+html{
+    font-size: 100%; /* 100% = 16px */
+}
+
+.box{
+    font-size: 2em; /* Ahora 1 em = 32px */
+}
+
+.miTexto{
+    font-size: 0.5em; /* Hereda el font-size del box (Padre), que era igual a 1em = 32px; por lo tanto 0.5 em es igual a 0.5 x 32px = 16px */
+}
+
+/* Utilizar Em para propiedades que cambien con el font-size
+Utilizar Rem para todo lo demás */

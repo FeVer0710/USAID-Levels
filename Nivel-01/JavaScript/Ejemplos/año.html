@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Script</title>
+</head>
+<body>   
+
+    <form>
+            <label>
+                año de nacimiento: <input type="text" id="año">
+            </label>
+<input type="button" value="ver" onclick="calcular()">
+    </form>
+    
+    <script>
+    function calcular(){
+    var año, edad;
+
+    año = document.getElementById('año').value;
+    año = parseInt(año);
+
+    edad = 2019 - año;
+
+    if(edad>=18){
+    alert('mayor de edad ');
+}
+else{
+    alert('menor de edad ');
+}
+}
+    </script>
+</body>
+</html>

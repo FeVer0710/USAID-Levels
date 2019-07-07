@@ -1,0 +1,23 @@
+Algoritmo DescuentoDeComputadoras
+	Definir cantidad Como Entero;
+	Definir R1, R2, R3 Como Real;
+	Escribir "Cada computadora tiene un precio de $11,000.00";
+	Escribir "Ingrese la cantidad de computadoras que desea comprar:";
+	Leer cantidad;
+	Si cantidad>=10 Entonces
+		R1=(cantidad*11000)-0.40;
+		Escribir "Se le aplicó un 40% de descuento";
+		Escribir "El total a pagar es de $",R1;
+	SiNo
+		Si cantidad>=5 Entonces
+			R2=(cantidad*11000)-0.20;
+			Escribir "Se le aplicó un 20% de descuento";
+			Escribir "El total a pagar es de $",R2;
+		SiNo
+			R3=(cantidad*11000)-0.10;
+			Escribir "Se le aplicó un 10% de descuento";
+			Escribir "El total a pagar es de $",R3;
+		FinSi
+	FinSi
+FinAlgoritmo
+//Jaime Fernando Berríos Ortíz

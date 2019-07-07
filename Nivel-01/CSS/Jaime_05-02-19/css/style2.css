@@ -1,0 +1,35 @@
+#div1 {
+    width: 200px;
+    height: 200px;
+    background: rgb(214, 214, 55);
+
+    animation-name: ejemplo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*@keyframes ejemplo {
+    from {
+        background: rgb(214, 214, 55);
+    }
+        to {
+            background: violet;
+        }
+}*/
+
+@keyframes ejemplo {
+    0% {
+        background: rgb(214, 214, 55); margin-left: 0px; margin-top: 0px
+    }
+    25% {
+        background: violet; margin-left: 200px; margin-top: 0px;
+        }
+
+    50%{
+        background: lightgray; margin-left: 200px; margin-top: 200px;
+        }
+
+    75% {
+        background: red; margin-left: 200px; margin-top: 0px
+        }
+}

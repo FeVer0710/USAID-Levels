@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Ejercicio #4</h2>
+    <p>Crear un programa que permita cargar un entero en un text y al presionar un botón nos muestre dicho valor elevado al cubo (emplear la función alert).</p>
+    
+    <form>
+        <fieldset>
+            <label>
+                Ingrese un número entero: <input type="number" id="numero">
+                <input type="button" value="Generar" onclick="numeroCubico()">
+            </label>
+        </fieldset>
+    </form>
+
+    <script>
+        function numeroCubico(){
+            var numero, resultado;
+
+            numero = document.getElementById('numero').value;
+            numero = parseInt(numero);
+
+            resultado = Math.pow(numero, 3);
+
+            alert('El valor del número '+numero+' elevado al cubo es: '+resultado);
+        }
+    </script>
+
+</body>
+</html>

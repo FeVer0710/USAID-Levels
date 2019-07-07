@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Temperatura Semanal</legend>
+            <div>
+                <label>
+                    Tempearatura Domingo: <input type="number" id="domingo">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Tempearatura Lunes: <input type="number" id="lunes">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Tempearatura Martes: <input type="number" id="martes">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Tempearatura Miércoles: <input type="number" id="miercoles">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Tempearatura Jueves: <input type="number" id="jueves">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Tempearatura Viernes: <input type="number" id="viernes">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Tempearatura Sábado: <input type="number" id="sabado">
+                </label>
+            </div>
+            <div>
+                <input type="button" value="Promedio" onclick="Promedio()">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+    
+    function Promedio(){
+        var domingo, lunes, martes, miercoles, jueves, viernes, sabado, resultado;
+
+        domingo = document.getElementById('domingo').value;
+        domingo = parseInt(domingo);
+
+        lunes = document.getElementById('lunes').value;
+        lunes = parseInt(lunes);
+
+        martes = document.getElementById('martes').value;
+        martes = parseInt(martes);
+
+        miercoles = document.getElementById('miercoles').value;
+        miercoles = parseInt(miercoles);
+
+        jueves = document.getElementById('jueves').value;
+        jueves = parseInt(jueves);
+
+        viernes = document.getElementById('viernes').value;
+        viernes = parseInt(viernes);
+
+        sabado = document.getElementById('sabado').value;
+        sabado = parseInt(sabado);
+
+        resultado = (domingo + lunes + martes + miercoles + jueves + viernes + sabado)/7
+
+        if(resultado>15 && resultado<35){
+            alert('¡Qué clima tan delicioso!');
+        }
+        else{
+            if(resultado>35){
+                alert('¡Qué semana tan calurosa!');
+            }
+            else{
+                alert('¡Qué semana tan fría!');
+            }
+        }
+    }
+    
+    </script>
+
+</body>
+</html>

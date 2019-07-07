@@ -1,0 +1,14 @@
+#div1 {
+    animation-name: texto;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes texto {
+    0%{
+        margin-left: 50px;
+    }
+    50%{
+        margin-left: 1190px;
+    }
+}

@@ -1,0 +1,31 @@
+@keyframes fondo {
+    from {top: -250px;}
+    to {top: 100%}
+}
+
+body {
+    background: black;
+    color: #0F0;
+}
+
+.matrix div {
+    position: absolute;
+    top: 0;
+    /*Rotar el texto*/
+    transform: rotate(90deg);
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.d1 {
+    animation-duration: 4s;
+}
+
+.d2 {
+    animation-duration: 6s;
+}
+
+.d3 {
+    animation-duration: 8s;
+}

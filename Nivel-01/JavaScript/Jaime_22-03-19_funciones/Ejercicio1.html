@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+
+            Ingrese el primer número: <input type="text" id="num1">
+            Ingrese el segundo número: <input type="text" id="num2"> <br><br>
+            <input type="button" value="Sumar" onclick="suma()">
+            <input type="button" value="Restar" onclick="resta()">
+            <input type="button" value="Multiplicar" onclick="producto()">
+            <input type="button" value="Dividir" onclick="division()">
+
+    </form>
+
+    <script>
+
+        function suma(){
+            var num1;
+            var num2;
+            var resultado;
+
+            num1 = document.getElementById('num1').value;
+            num1 = parseInt(num1);
+            num2 = document.getElementById('num2').value;
+            num2 = parseInt(num2);
+
+            resultado = (num1+num2);
+
+            alert('El resultado de la suma de los 2 números es: '+resultado);
+        }
+
+        function resta(){
+            var num1;
+            var num2;
+            var resultado;
+
+            num1 = document.getElementById('num1').value;
+            num1 = parseInt(num1);
+            num2 = document.getElementById('num2').value;
+            num2 = parseInt(num2);
+
+            resultado = (num1-num2);
+
+            alert('El resultado de la resta de los 2 números es: '+resultado);
+        }
+
+        function producto(){
+            var num1;
+            var num2;
+            var resultado;
+
+            num1 = document.getElementById('num1').value;
+            num1 = parseInt(num1);
+            num2 = document.getElementById('num2').value;
+            num2 = parseInt(num2);
+
+            resultado = (num1*num2);
+
+            alert('El resultado de la multiplicación de los 2 números es: '+resultado);
+        }
+
+        function division(){
+            var num1;
+            var num2;
+            var resultado;
+
+            num1 = document.getElementById('num1').value;
+            num1 = parseInt(num1);
+            num2 = document.getElementById('num2').value;
+            num2 = parseInt(num2);
+
+            resultado = (num1/num2);
+
+            alert('El resultado de la división de los 2 números es: '+resultado);
+        }
+
+    </script>
+
+</body>
+</html>

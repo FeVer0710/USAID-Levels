@@ -1,0 +1,56 @@
+/*ul{
+    text-align:center;
+}
+li{
+    list-style-position: inside;
+}*/
+
+h1{
+    color: blueviolet;
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+#cont, #panel {
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 10px;
+}
+
+#panel {
+    display: none; /*Oculta un elemento*/
+    padding: 30px;
+}
+
+#cont2, #panel2 {
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 10px;
+}
+
+#panel2 {
+    padding: 30px;
+}
+
+#cont3, #panel3 {
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 10px;
+}
+
+#panel3 {
+    display: none; /*Oculta un elemento*/
+    padding: 30px;
+}
+
+.cuadro {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+}

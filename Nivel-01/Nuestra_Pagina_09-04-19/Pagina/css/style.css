@@ -1,0 +1,53 @@
+/* @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Mogra&display=swap');
+
+*{
+    font-family: cursive;
+}
+
+.imgBg {
+    background-image: url("../img/bloom-blossom-flora-60006.jpg");
+    height: 100vh;
+    background-size: conver;
+    background-position: center;
+}
+
+.nav {
+    color: azure;
+}
+
+.content{
+    height: 500px;
+}
+
+#firstTitle{
+    background-color: rgb(40, 167, 69);
+    border-radius: 40px;
+    padding: 15px;
+    /* font-family: 'Bungee Shade', cursive; */
+    font-family: 'Mogra', cursive;
+    text-align: center;
+}
+
+#secondTitle{
+    background-color: rgb(40, 167, 69);
+    border-radius: 40px;
+    padding: 8px;
+}
+
+.container-fluid-piedepagina {
+	float: left;
+	/* background-color: #001E66; */
+	width: 100%;
+}
+
+.container-fluid-piedepagina p {
+	color: #E8E8E8;
+	text-align: center;
+	font-size: 1em;
+}
+
+h5{
+    background-color: rgb(40, 167, 69);
+    border-radius: 40px;
+}
